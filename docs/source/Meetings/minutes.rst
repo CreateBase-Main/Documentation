@@ -9,7 +9,7 @@ Minutes
    :widths: 20 120
 
    * - **Project**
-     - Content
+     - Test
    * - **Date**
      - Content
    * - **Attendees**
