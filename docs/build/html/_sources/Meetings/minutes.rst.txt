@@ -1,0 +1,22 @@
+Minutes
+=======
+
+.. Template
+
+.. _date:
+
+.. list-table::
+   :widths: 20 120
+
+   * - **Project**
+     - Content
+   * - **Date**
+     - Content
+   * - **Attendees**
+     - * Carlos
+       * Hyesu
+       * Carl
+   * - **Agendas**
+     - Content
+   * - **Details**
+     - Content
