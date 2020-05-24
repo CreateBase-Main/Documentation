@@ -8,7 +8,6 @@ To add an image, use one of the following directives.
 .. image:: image.png
   :width: 150 px
   :height: 150 px
-  :scale: 50 %
   :align: center
   
 Or if caption/ legend is needed.
