@@ -28,11 +28,14 @@ Or if caption/ legend is needed.
    | Symbol                | Meaning               |
    +=======================+=======================+
    | .. image:: tent.png   | Campground            |
-   |    :scale: 10 %       |                       |
+   |    :width: 50 px      |                       |
+   |    :height: 50 px     |                       |
    +-----------------------+-----------------------+
    | .. image:: waves.png  | Lake                  |
-   |    :scale: 10 %       |                       |
+   |    :width: 50 px      |                       |
+   |    :height: 50 px     |                       |
    +-----------------------+-----------------------+
    | .. image:: peak.png   | Mountain              |
-   |    :scale: 10 %       |                       |
+   |    :width: 50 px      |                       |
+   |    :height: 50 px     |                       |
    +-----------------------+-----------------------+
