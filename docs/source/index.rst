@@ -17,12 +17,4 @@ Welcome to the Create Base documentation!
    Engineering Kits/index.rst
    Templates/index.rst
    Ideas/index.rst
-   Archive/index.rst
-   
-.. toctree::
-   :maxdepth: 2
-   :caption: templates
-   
-   Templates/tables.rst
-   Templates/images.rst
-      
+   Archive/index.rst  
