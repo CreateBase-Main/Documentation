@@ -13,7 +13,8 @@ To add an image, use one of the following directives.
 Or if caption/ legend is needed.
 
 .. figure:: figure.png
-   :scale: 50 %
+   :width: 150 px
+   :height: 150 px
    :align: center
    :alt: map to buried treasure
 
