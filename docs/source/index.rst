@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Create Base Documentation's documentation!
+Welcome to the Create Base documentation!
 =====================================================
 
 .. toctree::
@@ -18,3 +18,11 @@ Welcome to Create Base Documentation's documentation!
    Templates/index.rst
    Ideas/index.rst
    Archive/index.rst
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: templates
+   
+   Templates/tables.rst
+   Templates/images.rst
+      
