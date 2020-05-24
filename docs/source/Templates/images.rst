@@ -6,13 +6,13 @@ To add an image, use one of the following directives.
 
 
 .. image:: image.png
-  :width: 150 px
+  :width: 150 pt
   :align: center
   
 Or if caption/ legend is needed.
 
 .. figure:: figure.png
-   :width: 150 px
+   :width: 150 pt
    :align: center
    :alt: map to buried treasure
 
@@ -26,11 +26,11 @@ Or if caption/ legend is needed.
    | Symbol                | Meaning               |
    +=======================+=======================+
    | .. image:: tent.png   | Campground            |
-   |    :width: 50 px      |                       |
+   |    :width: 50 pt      |                       |
    +-----------------------+-----------------------+
    | .. image:: waves.png  | Lake                  |
-   |    :width: 50 px      |                       |
+   |    :width: 50 pt      |                       |
    +-----------------------+-----------------------+
    | .. image:: peak.png   | Mountain              |
-   |    :width: 50 px      |                       |
+   |    :width: 50 pt      |                       |
    +-----------------------+-----------------------+
