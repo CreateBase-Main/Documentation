@@ -6,8 +6,8 @@ To add an image, use one of the following directives.
 
 
 .. image:: image.png
-  :width: 100 px
-  :height: 100 px
+  :width: 150 px
+  :height: 150 px
   :scale: 50 %
   :align: center
   
@@ -28,8 +28,11 @@ Or if caption/ legend is needed.
    | Symbol                | Meaning               |
    +=======================+=======================+
    | .. image:: tent.png   | Campground            |
+   |    :scale: 10 %       |                       |
    +-----------------------+-----------------------+
    | .. image:: waves.png  | Lake                  |
+   |    :scale: 10 %       |                       |
    +-----------------------+-----------------------+
    | .. image:: peak.png   | Mountain              |
+   |    :scale: 10 %       |                       |
    +-----------------------+-----------------------+
