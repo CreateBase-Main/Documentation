@@ -47,6 +47,13 @@ Setup
 
       make html
 
+12. Set automatic ``git submodule update`` on ``git pull`` by running in terminal
+    ::
+
+      git config --global submodule.recurse true
+
+
+
 Restructred Text (reST) and Sphinx - Simple Guide
 -------------------------------------------------
 

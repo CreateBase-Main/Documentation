@@ -45,7 +45,7 @@ templates_path = ['_templates']
 exclude_patterns = []
 
 
-js_source_path = '../../../application/public/javascripts'
+js_source_path = '../../application/public/javascripts'
 
 primary_domain = 'js'
 
