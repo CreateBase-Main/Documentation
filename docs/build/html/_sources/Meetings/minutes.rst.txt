@@ -13,9 +13,7 @@ Minutes
    * - **Date**
      - Content
    * - **Attendees**
-     - * Carlos
-       * Hyesu
-       * Carl
+     - Content
    * - **Agendas**
      - Content
    * - **Details**

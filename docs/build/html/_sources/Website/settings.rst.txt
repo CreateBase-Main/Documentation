@@ -1,0 +1,4 @@
+Settings
+========
+
+This is the documentation for ``settings.js``
