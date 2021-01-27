@@ -90,6 +90,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../Business/index.html">2. Business</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">3. Web Dev</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Settings/index.html">3.1. Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setup">3.2. Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#restructred-text-rest-and-sphinx-simple-guide">3.3. Restructred Text (reST) and Sphinx - Simple Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#basics">3.3.1. Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#headings">3.3.2. Headings</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Engineering%20Kits/index.html">4. Engineering Kits</a></li>
@@ -171,6 +177,84 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="Settings/index.html">3.1. Settings</a></li>
 </ul>
+</div>
+<div class="section" id="setup">
+<h2><span class="section-number">3.2. </span>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>Clone <a class="reference external" href="https://github.com/CreateBaseNZ/Documentation">CreateBase/Documentation</a> to your local machine</p></li>
+<li><p>Open the repository root folder in VS Code</p></li>
+<li><p>Open <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> found in <code class="docutils literal notranslate"><span class="pre">./docs/source</span></code> and run it (<code class="docutils literal notranslate"><span class="pre">F5</span></code>) to activate a Python environment</p></li>
+<li><p>Open the terminal console (<code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">~</span></code>)</p></li>
+<li><p>Install Sphinx:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">U</span> <span class="n">sphinx</span>
+</pre></div>
+</div>
+</li>
+<li><p>Install JSDoc:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">install</span> <span class="o">-</span><span class="n">g</span> <span class="n">jsdoc</span>
+</pre></div>
+</div>
+</li>
+<li><p>Install sphinx-js:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">js</span>
+</pre></div>
+</div>
+</li>
+<li><p>Enable sphinx-js by adding it to <code class="docutils literal notranslate"><span class="pre">extensions</span></code> in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sphinx_js&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</li>
+<li><p>Add path to the JavaScript files:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># the path starts at conf.py</span>
+<span class="n">js_source_path</span> <span class="o">=</span> <span class="s1">&#39;path/to/application/public/javascripts&#39;</span>
+</pre></div>
+</div>
+</li>
+<li><p>Change directory to <code class="docutils literal notranslate"><span class="pre">docs</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">docs</span>
+</pre></div>
+</div>
+</li>
+<li><p>Compile <code class="docutils literal notranslate"><span class="pre">.rst</span></code> files by running</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">html</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="restructred-text-rest-and-sphinx-simple-guide">
+<h2><span class="section-number">3.3. </span>Restructred Text (reST) and Sphinx - Simple Guide<a class="headerlink" href="#restructred-text-rest-and-sphinx-simple-guide" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="basics">
+<h3><span class="section-number">3.3.1. </span>Basics<a class="headerlink" href="#basics" title="Permalink to this headline">¶</a></h3>
+<p><em>Italicised</em>, <strong>bold</strong>, <code class="docutils literal notranslate"><span class="pre">verbatim</span></code>, and <a class="reference external" href="#">hyperlinked</a> text are written as so:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>*italic*
+**bold**
+``verbatim``
+`link text &lt;hyperlink&gt;`_
+</pre></div>
+</div>
+</div>
+<div class="section" id="headings">
+<h3><span class="section-number">3.3.2. </span>Headings<a class="headerlink" href="#headings" title="Permalink to this headline">¶</a></h3>
+<p>When it comes to writing headings, there are two rules:
+1. Use at least as many characters as the length of the heading
+2. Be consistent with character usage</p>
+<p>To write a heading, just underline it. There is no heading heirarchy assigned to certain underline characters as it is determined by the succession of headings. For consistency, we will use the following convention:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Section</span>
+<span class="o">=======</span>
+
+<span class="n">Subsection</span>
+<span class="o">----------</span>
+
+<span class="n">Subsubsection</span>
+<span class="p">,,,,,,,,,,,,,</span>
+
+<span class="n">Subsubsubsection</span>
+<span class="o">................</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 
