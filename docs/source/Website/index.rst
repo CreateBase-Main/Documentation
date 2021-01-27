@@ -81,6 +81,7 @@ To write a heading, just underline it. There is no heading heirarchy assigned to
     Subsubsubsection
     ................
 
-
-
+All headings are considered as internal hyperlinks and can be referred to using::
+    
+    `Basics`_
 
