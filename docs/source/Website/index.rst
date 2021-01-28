@@ -103,3 +103,11 @@ All headings are considered as internal hyperlinks and can be referred to using:
     
     `Basics`_
 
+Useful Links
+------------
+
+- `Introducing sphinx-js, a better way to document large JavaScript projects <https://hacks.mozilla.org/2017/07/introducing-sphinx-js-a-better-way-to-document-large-javascript-projects/>`_
+- `Utilising docstrings - Stack Overflow <https://hacks.mozilla.org/2017/07/introducing-sphinx-js-a-better-way-to-document-large-javascript-projects/>`_
+- `sphinx-js 3.1 <https://pypi.org/project/sphinx-js/>`_
+- `Configuration File - Read the Docs <https://docs.readthedocs.io/en/latest/config-file/index.html>`_
+- `Is there a way to make git pull automatically update submodules? - Stack Overflow <https://stackoverflow.com/questions/4611512/is-there-a-way-to-make-git-pull-automatically-update-submodules>`_
