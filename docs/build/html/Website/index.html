@@ -183,7 +183,7 @@
 <ol class="arabic">
 <li><p>Clone <a class="reference external" href="https://github.com/CreateBaseNZ/Documentation">CreateBase/Documentation</a> to your local machine</p></li>
 <li><p>Open the repository root folder in VS Code</p></li>
-<li><p>Open <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> found in <code class="docutils literal notranslate"><span class="pre">./docs/source</span></code> and run it (<code class="docutils literal notranslate"><span class="pre">F5</span></code>) to activate a Python environment</p></li>
+<li><p>Open <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> found in <code class="docutils literal notranslate"><span class="pre">docs/source</span></code> and run it (<code class="docutils literal notranslate"><span class="pre">F5</span></code>) to activate a Python environment</p></li>
 <li><p>Open the terminal console (<code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">~</span></code>)</p></li>
 <li><p>Install Sphinx:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">U</span> <span class="n">sphinx</span>
@@ -200,14 +200,32 @@
 </pre></div>
 </div>
 </li>
-<li><p>Enable sphinx-js by adding it to <code class="docutils literal notranslate"><span class="pre">extensions</span></code> in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sphinx_js&#39;</span><span class="p">]</span>
+<li><p>Set automatic <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">submodule</span> <span class="pre">update</span></code> on <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code> by running in terminal:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">submodule</span><span class="o">.</span><span class="n">recurse</span> <span class="n">true</span>
 </pre></div>
 </div>
 </li>
-<li><p>Add path to the JavaScript files:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># the path starts at conf.py</span>
-<span class="n">js_source_path</span> <span class="o">=</span> <span class="s1">&#39;path/to/application/public/javascripts&#39;</span>
+<li><p>Create a <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file in <code class="docutils literal notranslate"><span class="pre">docs</span></code> and enter:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sphinx</span><span class="o">-</span><span class="n">js</span><span class="o">==</span><span class="mf">3.1</span>
+</pre></div>
+</div>
+</li>
+<li><p>Create a <code class="docutils literal notranslate"><span class="pre">.readthedocs.yml</span></code> file in the root directory and enter</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">version</span><span class="p">:</span> <span class="mi">2</span>
+
+<span class="n">build</span><span class="p">:</span>
+  <span class="n">image</span><span class="p">:</span> <span class="n">latest</span>
+
+<span class="n">sphinx</span><span class="p">:</span>
+  <span class="n">configuration</span><span class="p">:</span> <span class="n">docs</span><span class="o">/</span><span class="n">source</span><span class="o">/</span><span class="n">conf</span><span class="o">.</span><span class="n">py</span>
+
+<span class="n">submodules</span><span class="p">:</span>
+  <span class="n">include</span><span class="p">:</span> <span class="nb">all</span>
+
+<span class="n">python</span><span class="p">:</span>
+  <span class="n">version</span><span class="p">:</span> <span class="mf">3.7</span>
+  <span class="n">install</span><span class="p">:</span>
+    <span class="o">-</span> <span class="n">requirements</span><span class="p">:</span> <span class="n">docs</span><span class="o">/</span><span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
 </pre></div>
 </div>
 </li>
@@ -218,11 +236,6 @@
 </li>
 <li><p>Compile <code class="docutils literal notranslate"><span class="pre">.rst</span></code> files by running</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">html</span>
-</pre></div>
-</div>
-</li>
-<li><p>Set automatic <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">submodule</span> <span class="pre">update</span></code> on <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code> by running</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">submodule</span><span class="o">.</span><span class="n">recurse</span> <span class="n">true</span>
 </pre></div>
 </div>
 </li>
