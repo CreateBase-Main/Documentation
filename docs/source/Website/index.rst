@@ -65,47 +65,12 @@ Setup
 
       make html
 
-Restructred Text (reST) and Sphinx - Simple Guide
--------------------------------------------------
-
-Basics
-,,,,,,
-
-*Italicised*, **bold**, ``verbatim``, and `hyperlinked <#>`_ text are written as so::
-
-    *italic*
-    **bold**
-    ``verbatim``
-    `link text <hyperlink>`_
-
-Headings
-,,,,,,,,
-
-When it comes to writing headings, there are two rules:
-1. Use at least as many characters as the length of the heading
-2. Be consistent with character usage
-
-To write a heading, just underline it. There is no heading heirarchy assigned to certain underline characters as it is determined by the succession of headings. For consistency, we will use the following convention::
-
-    Section
-    =======
-
-    Subsection
-    ----------
-
-    Subsubsection
-    ,,,,,,,,,,,,,
-
-    Subsubsubsection
-    ................
-
-All headings are considered as internal hyperlinks and can be referred to using::
-    
-    `Basics`_
+----
 
 Useful Links
 ------------
 
+- `rst CheatSheet <https://bashtage.github.io/sphinx-material/rst-cheatsheet/rst-cheatsheet.html>`_
 - `Introducing sphinx-js, a better way to document large JavaScript projects <https://hacks.mozilla.org/2017/07/introducing-sphinx-js-a-better-way-to-document-large-javascript-projects/>`_
 - `Utilising docstrings - Stack Overflow <https://hacks.mozilla.org/2017/07/introducing-sphinx-js-a-better-way-to-document-large-javascript-projects/>`_
 - `sphinx-js 3.1 <https://pypi.org/project/sphinx-js/>`_
