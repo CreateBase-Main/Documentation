@@ -55,14 +55,15 @@ Setup
         install:
           - requirements: docs/requirements.txt
 
-11. Change directory to ``docs``
+11. Update the ``application`` submodule with
     ::
       
-      cd docs
+      git submodule update --remote --merge
 
-12. Compile ``.rst`` files by running
+12. Compile ``.rst`` files by running in the ``docs`` directory
     ::
 
+      cd docs
       make html
 
 ----
@@ -71,6 +72,7 @@ Useful Links
 ------------
 
 - `rst CheatSheet <https://bashtage.github.io/sphinx-material/rst-cheatsheet/rst-cheatsheet.html>`_
+- `Jsdoc cheatsheet <https://devhints.io/jsdoc>`_
 - `Introducing sphinx-js, a better way to document large JavaScript projects <https://hacks.mozilla.org/2017/07/introducing-sphinx-js-a-better-way-to-document-large-javascript-projects/>`_
 - `Utilising docstrings - Stack Overflow <https://hacks.mozilla.org/2017/07/introducing-sphinx-js-a-better-way-to-document-large-javascript-projects/>`_
 - `sphinx-js 3.1 <https://pypi.org/project/sphinx-js/>`_

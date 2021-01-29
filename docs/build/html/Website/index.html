@@ -225,13 +225,14 @@
 </pre></div>
 </div>
 </li>
-<li><p>Change directory to <code class="docutils literal notranslate"><span class="pre">docs</span></code></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">docs</span>
+<li><p>Update the <code class="docutils literal notranslate"><span class="pre">application</span></code> submodule with</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">submodule</span> <span class="n">update</span> <span class="o">--</span><span class="n">remote</span> <span class="o">--</span><span class="n">merge</span>
 </pre></div>
 </div>
 </li>
-<li><p>Compile <code class="docutils literal notranslate"><span class="pre">.rst</span></code> files by running</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">html</span>
+<li><p>Compile <code class="docutils literal notranslate"><span class="pre">.rst</span></code> files by running in the <code class="docutils literal notranslate"><span class="pre">docs</span></code> directory</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">docs</span>
+<span class="n">make</span> <span class="n">html</span>
 </pre></div>
 </div>
 </li>
@@ -242,6 +243,7 @@
 <h2><span class="section-number">3.3. </span>Useful Links<a class="headerlink" href="#useful-links" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://bashtage.github.io/sphinx-material/rst-cheatsheet/rst-cheatsheet.html">rst CheatSheet</a></p></li>
+<li><p><a class="reference external" href="https://devhints.io/jsdoc">Jsdoc cheatsheet</a></p></li>
 <li><p><a class="reference external" href="https://hacks.mozilla.org/2017/07/introducing-sphinx-js-a-better-way-to-document-large-javascript-projects/">Introducing sphinx-js, a better way to document large JavaScript projects</a></p></li>
 <li><p><a class="reference external" href="https://hacks.mozilla.org/2017/07/introducing-sphinx-js-a-better-way-to-document-large-javascript-projects/">Utilising docstrings - Stack Overflow</a></p></li>
 <li><p><a class="reference external" href="https://pypi.org/project/sphinx-js/">sphinx-js 3.1</a></p></li>

@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>3.1.3. Back-end Requests &mdash; CreateBase Documentation 0.0.2 documentation</title>
+  <title>3.1.5. Back-end Requests &mdash; CreateBase Documentation 0.0.2 documentation</title>
   
 
   
@@ -39,7 +39,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="4. Engineering Kits" href="../../Engineering%20Kits/index.html" />
-    <link rel="prev" title="3.1.2. Front-end Functions" href="frontend.html" /> 
+    <link rel="prev" title="3.1.4. Front-end Functions" href="frontend.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -91,8 +91,10 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">3. Web Dev</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">3.1. Settings</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="variables.html">3.1.1. Variables</a></li>
-<li class="toctree-l3"><a class="reference internal" href="frontend.html">3.1.2. Front-end Functions</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">3.1.3. Back-end Requests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="init.html">3.1.2. Init</a></li>
+<li class="toctree-l3"><a class="reference internal" href="events.html">3.1.3. Events</a></li>
+<li class="toctree-l3"><a class="reference internal" href="frontend.html">3.1.4. Front-end Functions</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">3.1.5. Back-end Requests</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#setup">3.2. Setup</a></li>
@@ -155,7 +157,7 @@
         
           <li><a href="index.html"><span class="section-number">3.1. </span>Settings</a> &raquo;</li>
         
-      <li><span class="section-number">3.1.3. </span>Back-end Requests</li>
+      <li><span class="section-number">3.1.5. </span>Back-end Requests</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -175,7 +177,82 @@
            <div itemprop="articleBody">
             
   <div class="section" id="back-end-requests">
-<h1><span class="section-number">3.1.3. </span>Back-end Requests<a class="headerlink" href="#back-end-requests" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">3.1.5. </span>Back-end Requests<a class="headerlink" href="#back-end-requests" title="Permalink to this headline">¶</a></h1>
+<dl class="js function">
+<dt id="settings.backend.fetch">
+<code class="sig-prename descclassname">settings.backend.</code><code class="sig-name descname">fetch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#settings.backend.fetch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetches user data from the database.</p>
+<div class="line-block">
+<div class="line"><strong>Invokes</strong></div>
+<div class="line"><code class="xref js js-func docutils literal notranslate"><span class="pre">axios.post()</span></code></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>Invoked by</strong></div>
+<div class="line"><a class="reference internal" href="init.html#settings.init.init" title="settings.init.init"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.init.init()</span></code></a></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><strong>Object</strong> – Promise - User data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="js function">
+<dt id="settings.backend.accountSave">
+<code class="sig-prename descclassname">settings.backend.</code><code class="sig-name descname">accountSave</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#settings.backend.accountSave" title="Permalink to this definition">¶</a></dt>
+<dd><p>Posts Account section changes to the database; these include the account name and location. If successful, the local cache is updated.</p>
+<div class="line-block">
+<div class="line"><strong>Invokes</strong></div>
+<div class="line"><code class="xref js js-func docutils literal notranslate"><span class="pre">axios.post()</span></code>, <code class="xref js js-func docutils literal notranslate"><span class="pre">settings.cacheUpdate()</span></code></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>Invoked by</strong></div>
+<div class="line"><a class="reference internal" href="init.html#settings.init.attachAllListeners" title="settings.init.attachAllListeners"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.init.attachAllListeners()</span></code></a></div>
+</div>
+</dd></dl>
+
+<dl class="js function">
+<dt id="settings.backend.badgesSave">
+<code class="sig-prename descclassname">settings.backend.</code><code class="sig-name descname">badgesSave</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#settings.backend.badgesSave" title="Permalink to this definition">¶</a></dt>
+<dd><p>Posts badge configuration to the database. If successful, the local cache and preview badges are updated.</p>
+<div class="line-block">
+<div class="line"><strong>Invokes</strong></div>
+<div class="line"><code class="xref js js-func docutils literal notranslate"><span class="pre">axios.post()</span></code>, <code class="xref js js-func docutils literal notranslate"><span class="pre">settings.cacheUpdate()</span></code></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>Invoked by</strong></div>
+<div class="line"><a class="reference internal" href="init.html#settings.init.attachAllListeners" title="settings.init.attachAllListeners"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.init.attachAllListeners()</span></code></a></div>
+</div>
+</dd></dl>
+
+<dl class="js function">
+<dt id="settings.backend.notificationsSave">
+<code class="sig-prename descclassname">settings.backend.</code><code class="sig-name descname">notificationsSave</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#settings.backend.notificationsSave" title="Permalink to this definition">¶</a></dt>
+<dd><p>Posts mailing list changes to the database. If successful, the local cache is updated.</p>
+<div class="line-block">
+<div class="line"><strong>Invokes</strong></div>
+<div class="line"><code class="xref js js-func docutils literal notranslate"><span class="pre">axios.post()</span></code>, <code class="xref js js-func docutils literal notranslate"><span class="pre">settings.cacheUpdate()</span></code></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>Invoked by</strong></div>
+<div class="line"><a class="reference internal" href="init.html#settings.init.attachAllListeners" title="settings.init.attachAllListeners"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.init.attachAllListeners()</span></code></a></div>
+</div>
+</dd></dl>
+
+<dl class="js function">
+<dt id="settings.backend.profileSave">
+<code class="sig-prename descclassname">settings.backend.</code><code class="sig-name descname">profileSave</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#settings.backend.profileSave" title="Permalink to this definition">¶</a></dt>
+<dd><p>Posts Profile section changes to the database; these include the display name, display email, and display location. If successful, the local cache is updated.</p>
+<div class="line-block">
+<div class="line"><strong>Invokes</strong></div>
+<div class="line"><code class="xref js js-func docutils literal notranslate"><span class="pre">axios.post()</span></code>, <code class="xref js js-func docutils literal notranslate"><span class="pre">settings.cacheUpdate()</span></code></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>Invoked by</strong></div>
+<div class="line"><a class="reference internal" href="init.html#settings.init.attachAllListeners" title="settings.init.attachAllListeners"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.init.attachAllListeners()</span></code></a></div>
+</div>
+</dd></dl>
+
 </div>
 
 
@@ -185,7 +262,7 @@
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         <a href="../../Engineering%20Kits/index.html" class="btn btn-neutral float-right" title="4. Engineering Kits" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="frontend.html" class="btn btn-neutral float-left" title="3.1.2. Front-end Functions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="frontend.html" class="btn btn-neutral float-left" title="3.1.4. Front-end Functions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
