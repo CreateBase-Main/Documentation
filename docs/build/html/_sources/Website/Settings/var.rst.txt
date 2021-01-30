@@ -1,0 +1,14 @@
+Variables
+=========
+
+.. data:: settings.var.badges
+
+  Descriptions
+
+  :type: array
+  :value:
+    ::
+  
+    ['trophy', 'medal', 'console', 'loyal', 'grad', 'love', 'review', 'tour', 'verified']
+
+  

@@ -1,5 +1,5 @@
-Init
-====
+Initialisation
+==============
 
 .. autofunction:: settings.init.attachAllListeners
 

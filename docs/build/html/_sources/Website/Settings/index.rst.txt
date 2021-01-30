@@ -5,9 +5,9 @@ Settings
     :caption: Contents
     :maxdepth: 1
 
-    variables.rst
+    var.rst
     init.rst
-    events.rst
+    event.rst
     frontend.rst
     backend.rst
 
