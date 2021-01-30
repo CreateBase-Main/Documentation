@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>3.1.3. Events &mdash; CreateBase Documentation 0.0.2 documentation</title>
+  <title>3.2.3. Events &mdash; CreateBase Documentation 0.0.2 documentation</title>
   
 
   
@@ -38,8 +38,8 @@
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="3.1.4. Front-end Functions" href="frontend.html" />
-    <link rel="prev" title="3.1.2. Initialisation" href="init.html" /> 
+    <link rel="next" title="3.2.4. Variables" href="var.html" />
+    <link rel="prev" title="3.2.2. Initialisation" href="init.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -89,16 +89,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../../Meetings/index.html">1. Meetings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Business/index.html">2. Business</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">3. Web Dev</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">3.1. Settings</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="var.html">3.1.1. Variables</a></li>
-<li class="toctree-l3"><a class="reference internal" href="init.html">3.1.2. Initialisation</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">3.1.3. Events</a></li>
-<li class="toctree-l3"><a class="reference internal" href="frontend.html">3.1.4. Front-end Functions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="backend.html">3.1.5. Back-end Requests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../global/index.html">3.1. Global</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">3.2. Settings</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="backend.html">3.2.1. Back-end Requests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="init.html">3.2.2. Initialisation</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">3.2.3. Events</a></li>
+<li class="toctree-l3"><a class="reference internal" href="var.html">3.2.4. Variables</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../index.html#setup">3.2. Setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../index.html#useful-links">3.3. Useful Links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#setup">3.3. Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#useful-links">3.4. Useful Links</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../Engineering%20Kits/index.html">4. Engineering Kits</a></li>
@@ -155,15 +155,15 @@
         
           <li><a href="../index.html"><span class="section-number">3. </span>Web Dev</a> &raquo;</li>
         
-          <li><a href="index.html"><span class="section-number">3.1. </span>Settings</a> &raquo;</li>
+          <li><a href="index.html"><span class="section-number">3.2. </span>Settings</a> &raquo;</li>
         
-      <li><span class="section-number">3.1.3. </span>Events</li>
+      <li><span class="section-number">3.2.3. </span>Events</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../_sources/Website/Settings/event.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/Website/settings/event.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -177,7 +177,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="events">
-<h1><span class="section-number">3.1.3. </span>Events<a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">3.2.3. </span>Events<a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Some event listeners are attached within functions that add elements to the DOM.</p>
@@ -188,7 +188,7 @@
 <dd><p>Cancel button on mobile to go back to main Settings page.</p>
 <div class="line-block">
 <div class="line"><strong>Invokes</strong></div>
-<div class="line"><a class="reference internal" href="frontend.html#settings.accountCancel" title="settings.accountCancel"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.accountCancel()</span></code></a>, <a class="reference internal" href="frontend.html#settings.editModeExit" title="settings.editModeExit"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.editModeExit()</span></code></a></div>
+<div class="line"><a class="reference internal" href="index.html#settings.accountCancel" title="settings.accountCancel"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.accountCancel()</span></code></a>, <a class="reference internal" href="index.html#settings.editModeExit" title="settings.editModeExit"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.editModeExit()</span></code></a></div>
 </div>
 <div class="line-block">
 <div class="line"><strong>Invoked by</strong></div>
@@ -209,7 +209,7 @@
 <dd><p>Closes the badge configuration (when X button is clicked). Also reverts to cached badge configuration.</p>
 <div class="line-block">
 <div class="line"><strong>Invokes</strong></div>
-<div class="line"><a class="reference internal" href="frontend.html#settings.badgeConfigMenuClose" title="settings.badgeConfigMenuClose"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.badgeConfigMenuClose()</span></code></a></div>
+<div class="line"><a class="reference internal" href="index.html#settings.badgeConfigMenuClose" title="settings.badgeConfigMenuClose"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.badgeConfigMenuClose()</span></code></a></div>
 </div>
 <div class="line-block">
 <div class="line"><strong>Invoked by</strong></div>
@@ -223,7 +223,7 @@
 <dd><p>Closes the badge configuration menu if <code class="docutils literal notranslate"><span class="pre">Esc</span></code> key press. Also reverts to cached badge configuration.</p>
 <div class="line-block">
 <div class="line"><strong>Invokes</strong></div>
-<div class="line"><a class="reference internal" href="frontend.html#settings.badgeConfigMenuClose" title="settings.badgeConfigMenuClose"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.badgeConfigMenuClose()</span></code></a></div>
+<div class="line"><a class="reference internal" href="index.html#settings.badgeConfigMenuClose" title="settings.badgeConfigMenuClose"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.badgeConfigMenuClose()</span></code></a></div>
 </div>
 <div class="line-block">
 <div class="line"><strong>Invoked by</strong></div>
@@ -244,7 +244,7 @@
 <dd><p>Sends badge configuration to back-end, closes badge configuration menu, and exits Profile edit mode.</p>
 <div class="line-block">
 <div class="line"><strong>Invokes</strong></div>
-<div class="line"><a class="reference internal" href="backend.html#settings.backend.badgesSave" title="settings.backend.badgesSave"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.backend.badgesSave()</span></code></a>, <a class="reference internal" href="frontend.html#settings.badgeConfigMenuClose" title="settings.badgeConfigMenuClose"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.badgeConfigMenuClose()</span></code></a>, <a class="reference internal" href="#settings.event.badgeConfigMenuSave" title="settings.event.badgeConfigMenuSave"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.event.badgeConfigMenuSave()</span></code></a></div>
+<div class="line"><a class="reference internal" href="backend.html#settings.backend.badgesSave" title="settings.backend.badgesSave"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.backend.badgesSave()</span></code></a>, <a class="reference internal" href="index.html#settings.badgeConfigMenuClose" title="settings.badgeConfigMenuClose"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.badgeConfigMenuClose()</span></code></a>, <a class="reference internal" href="#settings.event.badgeConfigMenuSave" title="settings.event.badgeConfigMenuSave"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.event.badgeConfigMenuSave()</span></code></a></div>
 </div>
 <div class="line-block">
 <div class="line"><strong>Invoked by</strong></div>
@@ -278,7 +278,7 @@
 <dd><p>Cancel button on mobile to go back to main Settings page.</p>
 <div class="line-block">
 <div class="line"><strong>Invokes</strong></div>
-<div class="line"><a class="reference internal" href="frontend.html#settings.notificationsCancel" title="settings.notificationsCancel"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.notificationsCancel()</span></code></a>, <a class="reference internal" href="frontend.html#settings.editModeExit" title="settings.editModeExit"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.editModeExit()</span></code></a></div>
+<div class="line"><a class="reference internal" href="index.html#settings.notificationsCancel" title="settings.notificationsCancel"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.notificationsCancel()</span></code></a>, <a class="reference internal" href="index.html#settings.editModeExit" title="settings.editModeExit"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.editModeExit()</span></code></a></div>
 </div>
 <div class="line-block">
 <div class="line"><strong>Invoked by</strong></div>
@@ -309,11 +309,11 @@
 <dd><p>Cancel button on mobile to go back to main Settings page.</p>
 <div class="line-block">
 <div class="line"><strong>Invokes</strong></div>
-<div class="line"><a class="reference internal" href="frontend.html#settings.editModeExit" title="settings.editModeExit"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.editModeExit()</span></code></a></div>
+<div class="line"><a class="reference internal" href="index.html#settings.editModeExit" title="settings.editModeExit"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.editModeExit()</span></code></a></div>
 </div>
 <div class="line-block">
 <div class="line"><strong>Invoked by</strong></div>
-<div class="line"><a class="reference internal" href="frontend.html#settings.profileCancel" title="settings.profileCancel"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.profileCancel()</span></code></a>, <a class="reference internal" href="frontend.html#settings.editModeExit" title="settings.editModeExit"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.editModeExit()</span></code></a></div>
+<div class="line"><a class="reference internal" href="index.html#settings.profileCancel" title="settings.profileCancel"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.profileCancel()</span></code></a>, <a class="reference internal" href="index.html#settings.editModeExit" title="settings.editModeExit"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.editModeExit()</span></code></a></div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Arguments</dt>
@@ -330,7 +330,7 @@
 <dd><p>Handles all clicks on a section. Clicking the cancel or save button exits edit mode. Clicking anywhere on a section enables edit mode, if not already enabled.</p>
 <div class="line-block">
 <div class="line"><strong>Invokes</strong></div>
-<div class="line"><a class="reference internal" href="frontend.html#settings.editModeExit" title="settings.editModeExit"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.editModeExit()</span></code></a></div>
+<div class="line"><a class="reference internal" href="index.html#settings.editModeExit" title="settings.editModeExit"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.editModeExit()</span></code></a></div>
 </div>
 <div class="line-block">
 <div class="line"><strong>Invoked by</strong></div>
@@ -353,8 +353,8 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="frontend.html" class="btn btn-neutral float-right" title="3.1.4. Front-end Functions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="init.html" class="btn btn-neutral float-left" title="3.1.2. Initialisation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="var.html" class="btn btn-neutral float-right" title="3.2.4. Variables" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="init.html" class="btn btn-neutral float-left" title="3.2.2. Initialisation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

@@ -7,7 +7,8 @@ Documentation for all web dev code.
     :caption: Contents
     :maxdepth: 1
 
-    Settings/index.rst
+    global/index.rst
+    settings/index.rst
 
 Setup
 -----
