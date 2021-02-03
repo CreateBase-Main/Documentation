@@ -2,7 +2,7 @@ Web Dev
 =======
 
 .. toctree::
-    :caption: Contents
+    :caption: Pages
     :maxdepth: 1
 
     global/index.rst
@@ -42,9 +42,40 @@ Some things to note:
      * | :func:`theseAreAutomaticallyGenerated` :func:`willBeIgnoredIfTyped`
 
   do not need to be manually entered. The custom ``invoked_by`` Sphinx extension automatically generates both the **Heading** and the :func:`functions`. Although, including these will have no effect on the auto generation--they will either be ignored, removed, or overwritten
-- Inputs are denoted by ``@param`` and outputs by ``@returns``. These are followed by the type, name, and a brief description. Descriptions should be in correct English writing and tab-aligned for easier readability
+- Inputs are denoted by ``@param`` and outputs by ``@returns``. These are followed by the ``Type`` (capitalised), ``name`` (camelCase), and a brief description. Descriptions should be in correct English writing and tab-aligned for easier readability
+- There are many nuances to JavaScript types; when in doubt use::
 
-When rendered, the function will look something like this:
+    > console.log(typeof myVariable)
+
+  to check. Here's a simple table of common types:
+  
+  +------------------------+-----------------+
+  | value                  | typeof          | 
+  +========================+=================+
+  | ``undefined``          | ``"undefined"`` |
+  +------------------------+-----------------+
+  | ``null``               | ``"object"``    |
+  +------------------------+-----------------+
+  | ``true`` or ``false``  | ``"boolean"``   |
+  +------------------------+-----------------+
+  | all numbers or ``NaN`` | ``"number"``    |
+  +------------------------+-----------------+
+  | all strings            | ``"string"``    |
+  +------------------------+-----------------+
+  | all functions          | ``"function"``  |
+  +------------------------+-----------------+
+  | all elements           | ``"object"``    |
+  +------------------------+-----------------+
+  | all arrays             | ``"object"``    |
+  +------------------------+-----------------+
+  | native objects         | ``"object"``    |
+  +------------------------+-----------------+
+  | other objects          | ``"object"``    |
+  +------------------------+-----------------+
+
+
+
+If all goes well, when rendered, the function will look something like this:
 
 .. function:: someFunction(name, name2)
 
@@ -125,7 +156,5 @@ When rendered, the function will look something like this:
 - `rst CheatSheet <https://bashtage.github.io/sphinx-material/rst-cheatsheet/rst-cheatsheet.html>`_
 - `Jsdoc cheatsheet <https://devhints.io/jsdoc>`_
 - `Introducing sphinx-js, a better way to document large JavaScript projects <https://hacks.mozilla.org/2017/07/introducing-sphinx-js-a-better-way-to-document-large-javascript-projects/>`_
-- `Utilising docstrings - Stack Overflow <https://hacks.mozilla.org/2017/07/introducing-sphinx-js-a-better-way-to-document-large-javascript-projects/>`_
 - `sphinx-js 3.1 <https://pypi.org/project/sphinx-js/>`_
 - `Configuration File - Read the Docs <https://docs.readthedocs.io/en/latest/config-file/index.html>`_
-- `Is there a way to make git pull automatically update submodules? - Stack Overflow <https://stackoverflow.com/questions/4611512/is-there-a-way-to-make-git-pull-automatically-update-submodules>`_

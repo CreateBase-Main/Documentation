@@ -1,6 +1,6 @@
 import os, re, collections, pprint, shutil
 
-path = os.path.abspath('../../application/public/javascripts/')
+path = os.path.abspath('../application/public/javascripts')
 
 read_invokes = False
 read_function_name = False
@@ -80,8 +80,8 @@ for file in os.scandir(path):
 
           output.write(line)
 
+    shutil.move(path + '/' + file.name, path + '/archive/' + file.name)
     shutil.move('temp.js', path + '/' + file.name)
-
 
 
 def setup(app):
