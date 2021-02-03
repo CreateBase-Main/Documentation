@@ -1,8 +1,6 @@
 Web Dev
 =======
 
-Documentation for all web dev code.
-
 .. toctree::
     :caption: Contents
     :maxdepth: 1
@@ -10,8 +8,59 @@ Documentation for all web dev code.
     global/index.rst
     settings/index.rst
 
-Setup
 -----
+
+.. rubric:: JavaScript Docstring Guide
+
+This is the standard docstring template we use::
+
+  /**
+   * Function description with full grammar and punctuation.
+   *
+   * | **Invokes**
+   * | :func:`separateFunctions` :func:`withSpaces`
+   *
+   * | **Invoked by**
+   * | :func:`theseAreAutomaticallyGenerated` :func:`willBeIgnoredIfTyped`
+   *
+   * @param {Type} name     Variable description with full grammar and punctuation.
+   * @param {Type} name2    Tab-aligned descriptions are easier to read, but don't affect how the doc is rendered.
+   * @returns {Type} name3  Tab-aligned descriptions are easier to read, but don't affect how the doc is rendered.
+  */
+
+- Docstrings begin with ``/**`` immediately followed with the function description on the next line
+- Function descriptions should have correct spelling and grammar with full punctuation
+- The ``|`` preserve line breaks and indents for rst markup
+- Words enclosed in ``**`` are **bold**
+- Prepending functions with ``:func:`` and enclosing with ````` creates :func:`cross-references` to the respective functions
+- Cross-referenced functions are separated with spaces
+- The lines::
+
+     * | **Invoked by**
+     * | :func:`theseAreAutomaticallyGenerated` :func:`willBeIgnoredIfTyped`
+
+  do not need to manually entered. The custom ``invoked_by`` Sphinx extension automatically generates functions both the **Heading** and the :func:`functions`. Although, including these will have no effect on the auto generation - they will either be ignored, removed, or overwritten
+- Inputs are denoted by ``@param`` and outputs by ``@returns``. These are followed by the type, name, and a brief description. Descriptions should be in correct English writing and tab-aligned for easier readability
+
+When rendered, the function will look something like this:
+
+.. function:: someFunction(name, name2)
+
+    Function description with full grammar and punctuation.
+
+    | **Invokes**
+    | :func:`separateFunctions` :func:`withSpaces`
+
+    | **Invoked by**
+    | :func:`theseAreAutomaticallyGenerated` :func:`willBeIgnoredIfTyped`
+
+    :param Type name: Variable description with full grammar and punctuation.
+    :param Type name2: Tab-aligned descriptions are easier to read, but don't affect how the doc is rendered.
+    :return: **Type** -- name - Tab-aligned descriptions are easier to read, but don't affect how the doc is rendered.
+
+-----
+
+.. rubric:: Setup
 
 1. Clone `CreateBase/Documentation <https://github.com/CreateBaseNZ/Documentation>`_ to your local machine
 2. Open the repository root folder in VS Code
@@ -19,23 +68,23 @@ Setup
 4. Open the terminal console (``Ctrl + ~``)
 5. Install Sphinx::
 
-    pip install -U sphinx
+    > pip install -U sphinx
 
 6. Install JSDoc::
 
-    npm install -g jsdoc
+    > npm install -g jsdoc
 
 7. Install sphinx-js::
 
-    pip install sphinx-js
+    > pip install sphinx-js
 
 8. Set automatic ``git submodule update`` on ``git pull`` by running in terminal::
 
-    git config --global submodule.recurse true
+    > git config --global submodule.recurse true
 
 9. Create a ``requirements.txt`` file in ``docs`` and enter::
 
-    sphinx-js==3.1
+    > sphinx-js==3.1
 
 10. Create a ``.readthedocs.yml`` file in the root directory and enter
     ::
@@ -59,18 +108,17 @@ Setup
 11. Update the ``application`` submodule with
     ::
       
-      git submodule update --remote --merge
+      > git submodule update --remote --merge
 
 12. Compile ``.rst`` files by running in the ``docs`` directory
     ::
 
-      cd docs
-      make html
+      > cd docs
+      > make html
 
 ----
 
-Useful Links
-------------
+.. rubric:: Useful Links
 
 - `rst CheatSheet <https://bashtage.github.io/sphinx-material/rst-cheatsheet/rst-cheatsheet.html>`_
 - `Jsdoc cheatsheet <https://devhints.io/jsdoc>`_

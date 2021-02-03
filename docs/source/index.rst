@@ -10,6 +10,7 @@ Welcome to the CreateBase documentation!
    :maxdepth: 2
    :caption: Contents
    :numbered: 3
+   :titlesonly:
 
    Meetings/index.rst
    Business/index.rst

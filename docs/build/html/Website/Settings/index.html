@@ -97,8 +97,6 @@
 <li class="toctree-l3"><a class="reference internal" href="var.html">3.2.4. Variables</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../index.html#setup">3.3. Setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../index.html#useful-links">3.4. Useful Links</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../Engineering%20Kits/index.html">4. Engineering Kits</a></li>
@@ -191,9 +189,8 @@
 <dd><p>Reverts account to cached settings and hides the save button.</p>
 <div class="line-block">
 <div class="line"><strong>Invoked by</strong></div>
-<div class="line"><a class="reference internal" href="init.html#settings.init.attachAllListeners" title="settings.init.attachAllListeners"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.init.attachAllListeners()</span></code></a>, <a class="reference internal" href="event.html#settings.event.accountCancelMobile" title="settings.event.accountCancelMobile"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.event.accountCancelMobile()</span></code></a></div>
+<div class="line"><a class="reference internal" href="init.html#settings.init.attachAllListeners" title="settings.init.attachAllListeners"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.init.attachAllListeners()</span></code></a> <a class="reference internal" href="event.html#settings.event.accountCancelMobile" title="settings.event.accountCancelMobile"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.event.accountCancelMobile()</span></code></a></div>
 </div>
-<p>}</p>
 </dd></dl>
 
 <dl class="js function">
@@ -201,12 +198,12 @@
 <code class="sig-prename descclassname">settings.</code><code class="sig-name descname">accountInputsCheck</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#settings.accountInputsCheck" title="Permalink to this definition">¶</a></dt>
 <dd><p>Checks for changes in account settings.</p>
 <div class="line-block">
-<div class="line"><strong>Invoked by</strong></div>
-<div class="line"><a class="reference internal" href="init.html#settings.init.attachAllListeners" title="settings.init.attachAllListeners"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.init.attachAllListeners()</span></code></a></div>
-</div>
-<div class="line-block">
 <div class="line"><strong>Invokes</strong></div>
 <div class="line"><code class="xref js js-func docutils literal notranslate"><span class="pre">global.inputs.checkChange()</span></code></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>Invoked by</strong></div>
+<div class="line"><a class="reference internal" href="init.html#settings.init.attachAllListeners" title="settings.init.attachAllListeners"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.init.attachAllListeners()</span></code></a></div>
 </div>
 </dd></dl>
 
@@ -216,7 +213,7 @@
 <dd><p>Closes the badge configuration menu.</p>
 <div class="line-block">
 <div class="line"><strong>Invoked by</strong></div>
-<div class="line"><a class="reference internal" href="event.html#settings.event.badgeConfigMenuCancel" title="settings.event.badgeConfigMenuCancel"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.event.badgeConfigMenuCancel()</span></code></a>, <a class="reference internal" href="event.html#settings.event.badgeConfigMenuEscape" title="settings.event.badgeConfigMenuEscape"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.event.badgeConfigMenuEscape()</span></code></a>, <a class="reference internal" href="event.html#settings.event.badgeConfigMenuSave" title="settings.event.badgeConfigMenuSave"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.event.badgeConfigMenuSave()</span></code></a></div>
+<div class="line"><a class="reference internal" href="event.html#settings.event.badgeConfigMenuSave" title="settings.event.badgeConfigMenuSave"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.event.badgeConfigMenuSave()</span></code></a> <a class="reference internal" href="event.html#settings.event.badgeConfigMenuEscape" title="settings.event.badgeConfigMenuEscape"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.event.badgeConfigMenuEscape()</span></code></a> <a class="reference internal" href="event.html#settings.event.badgeConfigMenuCancel" title="settings.event.badgeConfigMenuCancel"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.event.badgeConfigMenuCancel()</span></code></a></div>
 </div>
 </dd></dl>
 
@@ -226,7 +223,7 @@
 <dd><p>Shows the configure badge menu when the preview badge container is clicked.</p>
 <div class="line-block">
 <div class="line"><strong>Invoked by</strong></div>
-<div class="line"><a class="reference internal" href="init.html#settings.init.attachAllListeners" title="settings.init.attachAllListeners"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.init.attachAllListeners()</span></code></a>, <a class="reference internal" href="init.html#settings.init.sessionStorageCheck" title="settings.init.sessionStorageCheck"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.init.sessionStorageCheck()</span></code></a></div>
+<div class="line"><a class="reference internal" href="init.html#settings.init.attachAllListeners" title="settings.init.attachAllListeners"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.init.attachAllListeners()</span></code></a> <a class="reference internal" href="init.html#settings.init.sessionStorageCheck" title="settings.init.sessionStorageCheck"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.init.sessionStorageCheck()</span></code></a></div>
 </div>
 </dd></dl>
 
@@ -242,7 +239,7 @@
 <dd><p>Updates the cache with current inputs.</p>
 <div class="line-block">
 <div class="line"><strong>Invoked by</strong></div>
-<div class="line"><a class="reference internal" href="backend.html#settings.backend.accountSave" title="settings.backend.accountSave"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.backend.accountSave()</span></code></a>, <a class="reference internal" href="backend.html#settings.backend.profileSave" title="settings.backend.profileSave"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.backend.profileSave()</span></code></a>, <a href="#id1"><span class="problematic" id="id2">:funct:`settings.backend.badgesSave`</span></a>, <a class="reference internal" href="backend.html#settings.backend.notificationsSave" title="settings.backend.notificationsSave"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.backend.notificationsSave()</span></code></a></div>
+<div class="line"><a class="reference internal" href="backend.html#settings.backend.profileSave" title="settings.backend.profileSave"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.backend.profileSave()</span></code></a> <a class="reference internal" href="backend.html#settings.backend.badgesSave" title="settings.backend.badgesSave"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.backend.badgesSave()</span></code></a> <a class="reference internal" href="backend.html#settings.backend.accountSave" title="settings.backend.accountSave"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.backend.accountSave()</span></code></a> <a class="reference internal" href="backend.html#settings.backend.notificationsSave" title="settings.backend.notificationsSave"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.backend.notificationsSave()</span></code></a></div>
 </div>
 </dd></dl>
 
@@ -252,7 +249,7 @@
 <dd><p>Exits editing mode for <code class="docutils literal notranslate"><span class="pre">selected</span></code> and returns the user to the main Settings page if on mobile.</p>
 <div class="line-block">
 <div class="line"><strong>Invoked by</strong></div>
-<div class="line"><a class="reference internal" href="event.html#settings.event.badgeConfigMenuSave" title="settings.event.badgeConfigMenuSave"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.event.badgeConfigMenuSave()</span></code></a>, <a class="reference internal" href="init.html#settings.init.attachAllListeners" title="settings.init.attachAllListeners"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.init.attachAllListeners()</span></code></a>, <a class="reference internal" href="event.html#settings.event.sectionClick" title="settings.event.sectionClick"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.event.sectionClick()</span></code></a>, <code class="xref js js-func docutils literal notranslate"><span class="pre">settings.event.sectionCancelMobile()</span></code></div>
+<div class="line"><a class="reference internal" href="event.html#settings.event.sectionClick" title="settings.event.sectionClick"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.event.sectionClick()</span></code></a> <a class="reference internal" href="event.html#settings.event.profileCancelMobile" title="settings.event.profileCancelMobile"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.event.profileCancelMobile()</span></code></a> <a class="reference internal" href="event.html#settings.event.accountCancelMobile" title="settings.event.accountCancelMobile"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.event.accountCancelMobile()</span></code></a> <a class="reference internal" href="event.html#settings.event.notificationsCancelMobile" title="settings.event.notificationsCancelMobile"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.event.notificationsCancelMobile()</span></code></a></div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Arguments</dt>
@@ -269,9 +266,8 @@
 <dd><p>Reverts notifications to cached settings and hides the save button.</p>
 <div class="line-block">
 <div class="line"><strong>Invoked by</strong></div>
-<div class="line"><a class="reference internal" href="init.html#settings.init.attachAllListeners" title="settings.init.attachAllListeners"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.init.attachAllListeners()</span></code></a>, <a class="reference internal" href="event.html#settings.event.notificationsCancelMobile" title="settings.event.notificationsCancelMobile"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.event.notificationsCancelMobile()</span></code></a></div>
+<div class="line"><a class="reference internal" href="init.html#settings.init.attachAllListeners" title="settings.init.attachAllListeners"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.init.attachAllListeners()</span></code></a> <a class="reference internal" href="event.html#settings.event.notificationsCancelMobile" title="settings.event.notificationsCancelMobile"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.event.notificationsCancelMobile()</span></code></a></div>
 </div>
-<p>}</p>
 </dd></dl>
 
 <dl class="js function">
@@ -279,12 +275,12 @@
 <code class="sig-prename descclassname">settings.</code><code class="sig-name descname">notificationsInputsCheck</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#settings.notificationsInputsCheck" title="Permalink to this definition">¶</a></dt>
 <dd><p>Checks for changes in notifications settings.</p>
 <div class="line-block">
-<div class="line"><strong>Invoked by</strong></div>
-<div class="line"><a class="reference internal" href="init.html#settings.init.attachAllListeners" title="settings.init.attachAllListeners"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.init.attachAllListeners()</span></code></a></div>
-</div>
-<div class="line-block">
 <div class="line"><strong>Invokes</strong></div>
 <div class="line"><code class="xref js js-func docutils literal notranslate"><span class="pre">global.inputs.checkChange()</span></code></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>Invoked by</strong></div>
+<div class="line"><a class="reference internal" href="init.html#settings.init.attachAllListeners" title="settings.init.attachAllListeners"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.init.attachAllListeners()</span></code></a></div>
 </div>
 </dd></dl>
 
@@ -294,9 +290,8 @@
 <dd><p>Reverts profile to cached settings and hides the save button.</p>
 <div class="line-block">
 <div class="line"><strong>Invoked by</strong></div>
-<div class="line"><a class="reference internal" href="init.html#settings.init.attachAllListeners" title="settings.init.attachAllListeners"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.init.attachAllListeners()</span></code></a>, <a class="reference internal" href="event.html#settings.event.profileCancelMobile" title="settings.event.profileCancelMobile"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.event.profileCancelMobile()</span></code></a></div>
+<div class="line"><a class="reference internal" href="init.html#settings.init.attachAllListeners" title="settings.init.attachAllListeners"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.init.attachAllListeners()</span></code></a></div>
 </div>
-<p>}</p>
 </dd></dl>
 
 <dl class="js function">
@@ -304,12 +299,12 @@
 <code class="sig-prename descclassname">settings.</code><code class="sig-name descname">profileInputsCheck</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#settings.profileInputsCheck" title="Permalink to this definition">¶</a></dt>
 <dd><p>Checks for changes in profile settings.</p>
 <div class="line-block">
-<div class="line"><strong>Invoked by</strong></div>
-<div class="line"><a class="reference internal" href="init.html#settings.init.attachAllListeners" title="settings.init.attachAllListeners"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.init.attachAllListeners()</span></code></a></div>
-</div>
-<div class="line-block">
 <div class="line"><strong>Invokes</strong></div>
 <div class="line"><code class="xref js js-func docutils literal notranslate"><span class="pre">global.inputs.checkChange()</span></code></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>Invoked by</strong></div>
+<div class="line"><a class="reference internal" href="init.html#settings.init.attachAllListeners" title="settings.init.attachAllListeners"><code class="xref js js-func docutils literal notranslate"><span class="pre">settings.init.attachAllListeners()</span></code></a></div>
 </div>
 </dd></dl>
 

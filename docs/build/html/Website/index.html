@@ -91,8 +91,6 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">3. Web Dev</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="global/index.html">3.1. Global</a></li>
 <li class="toctree-l2"><a class="reference internal" href="settings/index.html">3.2. Settings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#setup">3.3. Setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#useful-links">3.4. Useful Links</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Engineering%20Kits/index.html">4. Engineering Kits</a></li>
@@ -168,7 +166,6 @@
             
   <div class="section" id="web-dev">
 <h1><span class="section-number">3. </span>Web Dev<a class="headerlink" href="#web-dev" title="Permalink to this headline">¶</a></h1>
-<p>Documentation for all web dev code.</p>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Contents</span></p>
 <ul>
@@ -176,35 +173,95 @@
 <li class="toctree-l1"><a class="reference internal" href="settings/index.html">3.2. Settings</a></li>
 </ul>
 </div>
-<div class="section" id="setup">
-<h2><span class="section-number">3.3. </span>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<p class="rubric">JavaScript Docstring Guide</p>
+<p>This is the standard docstring template we use:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>/**
+ * Function description with full grammar and punctuation.
+ *
+ * | **Invokes**
+ * | :func:`separateFunctions` :func:`withSpaces`
+ *
+ * | **Invoked by**
+ * | :func:`theseAreAutomaticallyGenerated` :func:`willBeIgnoredIfTyped`
+ *
+ * @param {Type} name     Variable description with full grammar and punctuation.
+ * @param {Type} name2    Tab-aligned descriptions are easier to read, but don&#39;t affect how the doc is rendered.
+ * @returns {Type} name3  Tab-aligned descriptions are easier to read, but don&#39;t affect how the doc is rendered.
+*/
+</pre></div>
+</div>
+<ul>
+<li><p>Docstrings begin with <code class="docutils literal notranslate"><span class="pre">/**</span></code> immediately followed with the function description on the next line</p></li>
+<li><p>Function descriptions should have correct spelling and grammar with full punctuation</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">|</span></code> preserve line breaks and indents for rst markup</p></li>
+<li><p>Words enclosed in <code class="docutils literal notranslate"><span class="pre">**</span></code> are <strong>bold</strong></p></li>
+<li><p>Prepending functions with <code class="docutils literal notranslate"><span class="pre">:func:</span></code> and enclosing with <code class="docutils literal notranslate"><span class="pre">`</span></code> creates <code class="xref js js-func docutils literal notranslate"><span class="pre">cross-references()</span></code> to the respective functions</p></li>
+<li><p>Cross-referenced functions are separated with spaces</p></li>
+<li><p>The lines:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>* | **Invoked by**
+* | :func:`theseAreAutomaticallyGenerated` :func:`willBeIgnoredIfTyped`
+</pre></div>
+</div>
+<p>do not need to manually entered. The custom <code class="docutils literal notranslate"><span class="pre">invoked_by</span></code> Sphinx extension automatically generates functions both the <strong>Heading</strong> and the <code class="xref js js-func docutils literal notranslate"><span class="pre">functions()</span></code>. Although, including these will have no effect on the auto generation - they will either be ignored, removed, or overwritten</p>
+</li>
+<li><p>Inputs are denoted by <code class="docutils literal notranslate"><span class="pre">&#64;param</span></code> and outputs by <code class="docutils literal notranslate"><span class="pre">&#64;returns</span></code>. These are followed by the type, name, and a brief description. Descriptions should be in correct English writing and tab-aligned for easier readability</p></li>
+</ul>
+<p>When rendered, the function will look something like this:</p>
+<dl class="js function">
+<dt id="someFunction">
+<code class="sig-name descname">someFunction</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">name2</em><span class="sig-paren">)</span><a class="headerlink" href="#someFunction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function description with full grammar and punctuation.</p>
+<div class="line-block">
+<div class="line"><strong>Invokes</strong></div>
+<div class="line"><code class="xref js js-func docutils literal notranslate"><span class="pre">separateFunctions()</span></code> <code class="xref js js-func docutils literal notranslate"><span class="pre">withSpaces()</span></code></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>Invoked by</strong></div>
+<div class="line"><code class="xref js js-func docutils literal notranslate"><span class="pre">theseAreAutomaticallyGenerated()</span></code> <code class="xref js js-func docutils literal notranslate"><span class="pre">willBeIgnoredIfTyped()</span></code></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Arguments</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>Type</em>) – Variable description with full grammar and punctuation.</p></li>
+<li><p><strong>name2</strong> (<em>Type</em>) – Tab-aligned descriptions are easier to read, but don’t affect how the doc is rendered.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>Type</strong> – name - Tab-aligned descriptions are easier to read, but don’t affect how the doc is rendered.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<hr class="docutils" />
+<p class="rubric">Setup</p>
 <ol class="arabic">
 <li><p>Clone <a class="reference external" href="https://github.com/CreateBaseNZ/Documentation">CreateBase/Documentation</a> to your local machine</p></li>
 <li><p>Open the repository root folder in VS Code</p></li>
 <li><p>Open <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> found in <code class="docutils literal notranslate"><span class="pre">docs/source</span></code> and run it (<code class="docutils literal notranslate"><span class="pre">F5</span></code>) to activate a Python environment</p></li>
 <li><p>Open the terminal console (<code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">~</span></code>)</p></li>
 <li><p>Install Sphinx:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">U</span> <span class="n">sphinx</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">U</span> <span class="n">sphinx</span>
 </pre></div>
 </div>
 </li>
 <li><p>Install JSDoc:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">install</span> <span class="o">-</span><span class="n">g</span> <span class="n">jsdoc</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">npm</span> <span class="n">install</span> <span class="o">-</span><span class="n">g</span> <span class="n">jsdoc</span>
 </pre></div>
 </div>
 </li>
 <li><p>Install sphinx-js:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">js</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">js</span>
 </pre></div>
 </div>
 </li>
 <li><p>Set automatic <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">submodule</span> <span class="pre">update</span></code> on <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code> by running in terminal:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">submodule</span><span class="o">.</span><span class="n">recurse</span> <span class="n">true</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">submodule</span><span class="o">.</span><span class="n">recurse</span> <span class="n">true</span>
 </pre></div>
 </div>
 </li>
 <li><p>Create a <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file in <code class="docutils literal notranslate"><span class="pre">docs</span></code> and enter:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sphinx</span><span class="o">-</span><span class="n">js</span><span class="o">==</span><span class="mf">3.1</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">js</span><span class="o">==</span><span class="mf">3.1</span>
 </pre></div>
 </div>
 </li>
@@ -228,21 +285,19 @@
 </div>
 </li>
 <li><p>Update the <code class="docutils literal notranslate"><span class="pre">application</span></code> submodule with</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">submodule</span> <span class="n">update</span> <span class="o">--</span><span class="n">remote</span> <span class="o">--</span><span class="n">merge</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">git</span> <span class="n">submodule</span> <span class="n">update</span> <span class="o">--</span><span class="n">remote</span> <span class="o">--</span><span class="n">merge</span>
 </pre></div>
 </div>
 </li>
 <li><p>Compile <code class="docutils literal notranslate"><span class="pre">.rst</span></code> files by running in the <code class="docutils literal notranslate"><span class="pre">docs</span></code> directory</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">docs</span>
-<span class="n">make</span> <span class="n">html</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">cd</span> <span class="n">docs</span>
+<span class="o">&gt;</span> <span class="n">make</span> <span class="n">html</span>
 </pre></div>
 </div>
 </li>
 </ol>
-</div>
 <hr class="docutils" />
-<div class="section" id="useful-links">
-<h2><span class="section-number">3.4. </span>Useful Links<a class="headerlink" href="#useful-links" title="Permalink to this headline">¶</a></h2>
+<p class="rubric">Useful Links</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://bashtage.github.io/sphinx-material/rst-cheatsheet/rst-cheatsheet.html">rst CheatSheet</a></p></li>
 <li><p><a class="reference external" href="https://devhints.io/jsdoc">Jsdoc cheatsheet</a></p></li>
@@ -252,7 +307,6 @@
 <li><p><a class="reference external" href="https://docs.readthedocs.io/en/latest/config-file/index.html">Configuration File - Read the Docs</a></p></li>
 <li><p><a class="reference external" href="https://stackoverflow.com/questions/4611512/is-there-a-way-to-make-git-pull-automatically-update-submodules">Is there a way to make git pull automatically update submodules? - Stack Overflow</a></p></li>
 </ul>
-</div>
 </div>
 
 
