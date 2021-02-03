@@ -1,6 +1,6 @@
 import os, re, collections, pprint, shutil
 
-path = os.path.abspath('../application/public/javascripts/')
+path = os.path.abspath('../../application/public/javascripts/')
 
 read_invokes = False
 read_function_name = False
