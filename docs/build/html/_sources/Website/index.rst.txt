@@ -1,8 +1,5 @@
 Web Dev
 =======
 
-.. toctree::
-    :caption: Pages
-    :maxdepth: 1
-
-    :ref:`app`
+:doc:`CreateBase App Documentation <app:index>`
+-----------------------------------------------
